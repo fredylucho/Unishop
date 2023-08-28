@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+.body-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+/* ===================================================
+                        SEARCH
+=================================================== */
+.search-container{
+    width: 100%;
+    height: 150px;
+    display: flex;
+}
+
+.search-container .search{
+    background-color: rgb(236, 236, 236);
+    width: 80%;
+    height: 40px;
+    margin: 20px auto 10px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.search-container .search a{
+    display: flex;
+    color: black;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.search-container .search h5{
+    color: rgb(173, 173, 173);
+}
+/* ===================================================
+                    MENU OPTION
+=================================================== */
+.menu-container{
+    /* background-color: azure; */
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-container a {
+    text-decoration: none;
+    color: black;
+}
+.menu-container .menu-option{
+    width: 100%;
+    height: 100px;
+    border-radius: 15px;
+    border: 2px #F0F0F0 solid;
+    margin: 10px auto;
+}
+
+.menu-container .menu-option .menu-title{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+}
+
+/* .menu-container .color-a{
+    background-color: #b2e2f2;
+}
+
+.menu-container .color-b{
+    background-color: #b0f2c2;
+}
+
+.menu-container .color-c{
+    background-color: #fcb7af;
+}
+
+.menu-container .color-d{
+    background-color: #fdf9c4;
+}
+
+.menu-container .color-e{
+    background-color: #b0c2f2;
+} */
+/* ===================================================
+                        NAVIGATION
+=================================================== */
+.navigation-container{
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    margin-top: 100px;
+}
+
+.navigation-container .navigation{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px 25px 0 0;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
+}
+
+.navigation-container .navigation .principal-button{
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.navigation-container .navigation a, .qty-item{
+    color: black;
+    display: flex;
+}
+
+.navigation-container .navigation .principal-button a{
+    color: white;
+}
+
+.navigation-container .navigation .qty-item span{
+    background-color: black;
+    color: white;
+    width: 13px;
+    height: 13px;
+    font-size:x-small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 10px;
+}
